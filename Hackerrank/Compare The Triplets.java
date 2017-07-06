@@ -7,18 +7,12 @@ import java.util.regex.*;
 public class Solution {
 
     static int[] solve(int a0, int a1, int a2, int b0, int b1, int b2){
-        int pointsA = 0;
-        int pointsB = 0;
-        if(a0>b0) pointsA++;
-        if(b0>a0) pointsB++;
-        if(a1>b1) pointsA++;
-        if(b1>a1) pointsB++;
-        if(a2>b2) pointsA++;
-        if(b2>a2) pointsB++;
-        int[] results = new int[2];
-        results[0] = pointsA;
-        results[1] = pointsB;
-        return results;
+        pointsA = ((a0>b0)?1:0)+((a1>b1)?1:0)+((a2>b2)?1:0);
+        pointsB = ((b0>a0)?1:0)+((b1>a1)?1:0)+((b2>a2)?1:0);
+        int[] result = new int[2];
+        result[0] = pointsA;
+        result[1] = pointsB;
+        return result;
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
