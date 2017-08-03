@@ -1,5 +1,7 @@
 //Problem: https://leetcode.com/problems/valid-perfect-square/discuss/
 
+
+//binary sort to find a perfect square
 public class Solution {
     public boolean isPerfectSquare(int num) {
         int low = 1, high = num;
