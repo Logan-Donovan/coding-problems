@@ -1,3 +1,5 @@
+//Problem: https://www.hackerrank.com/challenges/compare-the-triplets
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
