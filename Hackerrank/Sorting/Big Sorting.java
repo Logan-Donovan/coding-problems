@@ -6,7 +6,7 @@ import java.util.regex.*;
 
 public class Solution {
 
-    /* Solution found from @RyanFehr
+    /*
     
         Method: Use Arrays.sort() with a custom comparator that compares large strings as integers. Then use a
         StringBuilder to ouput the Strings in the newly sorted array.
