@@ -4,11 +4,13 @@ public class Solution {
     public int[] plusOne(int[] digits) {
         int lastDig = digits[digits.length-1];
         int size = digits.length;
-        boolean incSize = true;
+        boolean incSize = true; 
         if(lastDig == 9){
+            //check to see if we need to add a digit to the number
             for(int digit : digits){
                 if(digit!=9) incSize = false;
             }
+            //if we need to add a digit
             if(incSize){
                 digits = new int[size+1];
                 for(int i = 0; i < digits.length; i++){
