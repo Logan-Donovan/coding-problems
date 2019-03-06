@@ -1,3 +1,5 @@
+//Problem: https://leetcode.com/problems/hamming-distance/submissions/
+
 class Solution {
     public int hammingDistance(int x, int y) {
         int sum = 0;
